@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Text from "./components/Text";
+import React from 'react';
+import Text from './components/Text'; // Make sure to adjust the path if necessary
 
-export const metadata = {
+
+const metadata = {
   title: "Live Speech To text",
   description: "🎙️ > 📝",
 };
@@ -11,11 +12,13 @@ export default function Home() {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:gap-48 gap-5 lg:flex-row-reverse">
         <img
-          src="https://static.zerochan.net/Hayashida.Airi.full.1626740.jpg"
-          className="h-96 rounded-lg lg:shadow-2xl w-64"
+          src="https://rynhan.github.io/DEMI-AI-widget/D3.png"
+          className="h-80 rounded-lg lg:shadow-2xl w-80"
         />
         <Text />
       </div>
     </div>
   );
 }
+
+export { metadata };
